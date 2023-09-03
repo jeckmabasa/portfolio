@@ -24,7 +24,7 @@ export const Contact = () => {
             class="icon contact-icon"
           />
           <p>
-            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/jeck-mabasa-167a3461/">LinkedIn</a>
           </p>
         </div>
       </div>
