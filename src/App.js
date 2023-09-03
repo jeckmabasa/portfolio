@@ -4,9 +4,12 @@ import { Profile } from "./pages/Profile";
 import { Experience } from "./pages/Experience";
 import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
-import { Footer } from './pages/Footer'
+import { Footer } from "./pages/Footer";
 
-function App() {
+const App = () => {
+  const toggleMenu = () => {
+    console.log("toggle menu");
+  };
   return (
     <div>
       <nav className="desktop-nav">
@@ -31,29 +34,29 @@ function App() {
       <nav id="hamburger-nav">
         <div class="logo">John Doe</div>
         <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
+          <div class="hamburger-icon" onClick={toggleMenu}>
             <span></span>
             <span></span>
             <span></span>
           </div>
           <div class="menu-links">
             <li>
-              <a href="#about" onclick="toggleMenu()">
+              <a href="#about" onClick={toggleMenu}>
                 About
               </a>
             </li>
             <li>
-              <a href="#experience" onclick="toggleMenu()">
+              <a href="#experience" onClick={toggleMenu}>
                 Experience
               </a>
             </li>
             <li>
-              <a href="#projects" onclick="toggleMenu()">
+              <a href="#projects" onClick={toggleMenu}>
                 Projects
               </a>
             </li>
             <li>
-              <a href="#contact" onclick="toggleMenu()">
+              <a href="#contact" onClick={toggleMenu}>
                 Contact
               </a>
             </li>
@@ -80,6 +83,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

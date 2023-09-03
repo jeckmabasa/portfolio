@@ -10,7 +10,7 @@ export const Profile = () => {
   return (
     <section id="profile">
       <div class="profile-pic">
-        <img src={profile} alt="John Doe profile picture" />
+        <img src={profile} alt="Jeck Mabasa profile" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -34,13 +34,18 @@ export const Profile = () => {
             src={linkedin}
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onClick={() => {
+              window.location.href =
+                "https://www.linkedin.com/in/jeck-mabasa-167a3461/";
+            }}
           />
           <img
             src={github}
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onClick={() => {
+              window.location.href = "https://github.com/chibijeck";
+            }}
           />
         </div>
       </div>
